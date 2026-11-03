@@ -1,0 +1,152 @@
+:root {
+    --primary-color: #2E2EFF;
+    --secundary-color: #087CE7;
+    --background-color: #FFFFFF;
+    --tekst-color:#000000;
+    --tekst2-color:#FFFFFF;
+    --koptekst-color:#0b35f4;
+    --accent-color:#c6cdd3;
+}
+    * {
+    box-sizing: border-box;
+}
+
+@media (max-width: 223px) {
+    /* Css voor kleinere schermen */
+    .Projectkaarten {
+    display: flex;
+    flex-direction: column;    
+    gap: 5px;
+    justify-content: center;
+    align-items: left;
+    }  
+}
+
+@media (max-width: 223px) {
+    #over-mij {
+    text-wrap: wrap;        
+    }
+}
+
+
+
+nav {
+color: var(--accent-color);
+background-color: var(--accent-color);
+text-align: left;
+}
+
+@media (max-width: 223px) {
+    /* Css voor kleinere schermen */
+    .Projectkaarten {
+    display: flex;
+    flex-direction: column;    
+    gap: 5px;
+    justify-content: center;
+    align-items: left;
+    }  
+}
+
+@media (max-width: 223px) {
+    #over-mij {
+    text-wrap: wrap;
+        
+    }
+}
+
+.Highlight {
+    color: var(--koptekst-color);
+    text-align: left;
+}
+
+#Foto {
+    text-align: center;
+    background-color: #e93819;
+}
+
+#Video {
+    background-color: var(--secundary-color);
+    text-align: center;
+}
+
+#Mijn-doelen {
+    text-align: left;
+}
+
+.accent {
+    background-color: var(--accent-color);
+}
+
+head {
+    background-color: var(--primary-color); color:var(--tekst-color); padding: 30px; text-align: center;
+    font-family: Arial, sans-serif;
+    }
+    
+header {
+        background-color: var(--primary-color); color: var(--tekst2-color); padding: 30px; text-align: center;
+        font-family: Arial, sans-serif;
+        color: var( --tekst2-color);
+        text-align: center;
+        }
+
+#WebTitle {
+    color: var(--tekst2-color);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--tekst-color);
+    font-family: Arial, sans-serif;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}
+
+.Projectkaart {
+padding: 20px;
+border: 5px solid var(--secundary-color);
+margin: 20px;
+}
+
+.Projectkaarten {
+display: flex;
+gap: 10px;
+flex-direction: row;
+justify-content: center;
+align-items: left;
+}
+
+#Projecten {
+display: flex;
+flex-direction: column;    
+gap: 10px;
+justify-content: left;
+align-items: left;
+background-color: var(--accent-color);
+font-family: Arial, sans-serif;
+color: var( --tekst-color);
+text-align: left;
+
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--tekst2-color);
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
