@@ -1,0 +1,175 @@
+:root {
+    --primary-color: #2E2EFF;
+    --secundary-color: #087CE7;
+    --background-color: #FFFFFF;
+    --tekst-color:#000000;
+    --tekst2-color:#FFFFFF;
+    --koptekst-color:#0b35f4;
+    --accent-color:#c6cdd3;
+}
+    * {
+    box-sizing: border-box;
+}
+
+
+nav {
+color: var(--accent-color);
+background-color: var(--accent-color);
+text-align: left;
+}
+
+.Highlight {
+    color: var(--koptekst-color);
+    text-align: left;
+}
+
+#Foto {
+    text-align: center;
+    background-color: var(--secundary-color);
+}
+
+#Video {
+    background-color: var(--secundary-color);
+    text-align: center;
+}
+
+#Mijn-doelen {
+    text-align: left;
+}
+
+#Vaardigheden {
+    text-align: left;
+    justify-content: left;
+}
+
+.accent {
+    background-color: var(--accent-color);
+}
+
+head {
+    background-color: var(--primary-color); color:var(--tekst-color); padding: 30px; text-align: center;
+    font-family: Arial, sans-serif;
+    }
+    
+header {
+        background-color: var(--primary-color); color: var(--tekst2-color); padding: 30px; text-align: center;
+        font-family: Arial, sans-serif;
+        color: var( --tekst2-color);
+        text-align: center;
+        }
+
+#WebTitle {
+    color: var(--tekst2-color);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--tekst-color);
+    font-family: Arial, sans-serif;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Dit heb ik aan AI gevraagd, want ik kwam er echt niet uit.*/
+/* De projectkaarten krijgen een flexibele breedte */
+.Projectkaart {
+    padding: 20px;
+    border: 5px solid var(--secundary-color);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--background-color);
+    flex: 1; /* Zorgt dat de kaarten netjes de ruimte verdelen op desktop */
+}
+
+/* De container waar de kaarten in zitten */
+#Projecten {
+    display: flex;
+    flex-direction: row;    
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+}
+
+/* --- MEDIA QUERY VOOR MOBIEL (< 768px) --- */
+@media (max-width: 768px) {
+    #Projecten {
+        flex-direction: column; /* Zet de kaarten onder elkaar op mobiel */
+        align-items: stretch;   /* Zorgt dat ze de volle breedte pakken */
+    }
+
+    .Projectkaart {
+        width: 100%;            /* Volledige breedte op kleine schermen */
+    }
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--tekst2-color);
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Dit heb ik ook aan AI gevraagd, niet de footer*/
+@media (max-width: 768px) {
+    /* Css voor kleinere schermen */
+     #over-mij {
+    text-wrap: wrap;
+    }
+
+    .Projectkaarten {
+    display: flex;
+    flex-direction: column;    
+    gap: 5px;
+    justify-content: center;
+    align-items: flex-start;
+    } 
+
+    .Projectenkaarten {
+    display: flex;
+    flex-direction: column;    
+    gap: 5px;
+    justify-content: center;
+    align-items: flex-start;
+    }  
+    .Projectkaart {
+    min-width: 100%; /* Zorgt dat de kaarten de volle breedte pakken op mobiel */
+    }
+
+    #Over-mij {
+    min-width: 100%;
+    }
+
+    img {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+    }
+
+    video {
+    width: 100%;
+    height: auto;
+    display: block;
+    }
+}
